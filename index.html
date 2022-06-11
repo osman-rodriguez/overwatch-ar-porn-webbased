@@ -11,11 +11,13 @@
     <script src="assets/scripts/jquery.min.js"></script> <script src="assets/scripts/changemodels.js"></script>
     <script src="assets/scripts/changesizes.js"></script>
     <script src="assets/scripts/toonmesh.js"></script>
+    <script src="assets/scripts/preloader.js"></script>
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
     </head>
     
- <!--  BUTTONS  -->      
-      
+ <!--  BUTTONS  -->        
+  <div class="preloader"> <img class="preloader-icon" src="/PATH-TO-IMAGE" alt="My Site Preloader"> </div>
+  <script>window.onload = function(){ document.querySelector(".preloader").style.display = "none"; }</script>
   <body style="margin : 0px; overflow: hidden;">
     <div class="frente">
       <div class="buttons">
@@ -38,28 +40,28 @@
           </div>
         </div>
         <div class="dropup">
-          <button class="otro">Tamaño</button>
+          <button class="otro">Tama&ntilde;o</button>
           <div class="dropup-content2">
-            <a href="#" class="real" id="real">Tamaño Real</a>
+            <a href="#" class="real" id="real">Tama&ntilde;o Real</a>
             <a href="#" class="grande" id="grande">Grande</a>
             <a href="#" class="mediana" id="mediana">Mediana</a>
-            <a href="#" class="pequeña" id="pequeña">Pequeña</a>
-            <a href="#" class="muñequita" id="muñequita">Muñequita</a>
+            <a href="#" class="pequeña" id="pequeña">Peque&ntilde;a</a>
+            <a href="#" class="muñequita" id="muñequita">Mu&ntilde;equita</a>
           </div>
         </div>
-        <input class="otro" type="button" onclick="location.href='https://github.com';" value="Github" />
+        <input class="otro" type="button" onclick="location.href='https://github.com/osman-rodriguez/overwatch-ar-porn-webbased';" value="Github" />
       </div>
     </div>
       
     <!--  IMAGE TRACKER  -->     
       
-    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene" mindar-image="imageTargetSrc: https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/target.mind?v=1654393022921;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene  loading-screen="dotsColor: white; backgroundColor: #10151b" arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene" mindar-image="imageTargetSrc: https://ozmatech.com/digitalmedia/demos/overwatch-arporn/assets/target/target.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
      
     <!--  3D MODEL SELECTION  -->   
         
       <a-assets>
-        <img id="transpImage" crossorigin="anonymous" src="https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/loading.png">
-        <a-asset-item id="avatarModel" src="https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/ST0EAVKGQLKILV8K1C88EH4H6%20(1).glb"></a-asset-item>
+        <img id="transpImage" crossorigin="anonymous" src="assets/images/loading.png">
+        <a-asset-item id="avatarModel" src="assets/models/tracer1.glb" rotation="90 90 90"></a-asset-item>
       </a-assets>
         
     <!--  3D MODEL VIEWER  -->  
@@ -68,9 +70,9 @@
       <a-entity mindar-image-target="targetIndex: 0">
         <a-entity camera look-controls position="0 0 0">
           <a-entity id="loadingEl">
-            <a-image src="#transpImage" alpha-test></a-image>
+            <a-image src="#transpImage" rotation="0 0 0" alpha-test></a-image>
           </a-entity>
-          <a-entity id="puta" scale="1 1 1" unlit gltf-model="#avatarModel" material="shader: flat" gesture-handler="minScale: 0.25; maxScale: 10" loader></a-entity>
+          <a-entity id="puta" scale="1 1 1" rotation="90 90 90" unlit gltf-model="#avatarModel" material="shader: flat" gesture-handler="minScale: 0.25; maxScale: 10" loader></a-entity>
         </a-entity>
       </a-entity>
     </a-scene>

@@ -1,245 +1,212 @@
 [data-icon]:before {
-  font-family: 'FontAwesome';
-  font-size: 130%;
-  color: gray;
-  margin-right: .5em;
-  content: attr(data-icon);
-  speak: none;
+     font-family: 'FontAwesome';
+     font-size: 130%;
+     color: gray;
+     margin-right: .5em;
+     content: attr(data-icon);
+     speak: none;
 }
-.icon-alone {
-  display: inline-block;
+ .icon-alone {
+     display: inline-block;
 }
-      
-        .f { height: 100%;
-    width:100%;
-    margin:0;
-    padding:0;
-    background:url(https://acegif.com/wp-content/uploads/loading-58.gif);
-    background-position:50% 50%;
-    background-repeat:no-repeat;
-        z-index: 10;
-      }
-      
-      .text
-    {
-        font-size: 12px;
-        color: white;
-        opacity:100;
-    }
-      
-      .buttons{
-        z-index: 10;
-        font-family: Arial, Helvetica, sans-serif;
-        
-      }
-
-      .buttons {
-        font-family: Arial, Helvetica, sans-serif;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 10;
-      }
-
-      
-      
-      .otro{
-        font-family: Arial, Helvetica, sans-serif;
-          transform: skew(-25deg); 
-    -o-transform: skew(-25deg); 
-    -moz-transform: skew(-25deg); 
-    -webkit-transform: skew(-25deg);
-        font-size: 12px;
-        font-weight: bold;
-        margin: 5%;
-        border: none;
-        background: #10151b;
-        color: white;
-        width: 8em;
-        height: 3em;
-        opacity: 0.8; 
-      }
-
-    
-
-      .personajes {
-        
-         background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/personajes.png?v=1654385813581");
-       background-size: 110%;
-        background-position:left ;
-          transform: skew(-25deg); 
-    -o-transform: skew(-25deg); 
-    -moz-transform: skew(-25deg); 
-    -webkit-transform: skew(-25deg);
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: -1px;
-        border: none;
-        color: white;
-        width: 8em;
-        height: 6em;
-        
-      }
-
-      .dropbtn {
-        background-color: #3498DB;
-        color: white;
-        padding: 16px;
-        font-size: 11px;
-        border: none;
-      }
-
-      .dropup {
-        font-family: Arial, Helvetica, sans-serif;
-        position: relative;
-        display: inline-block;
-        opacity: 1; 
-        
-      }
-
-      .dropup-content {
-        font-family: 'Sans-serif';
-        display: none;
-        position: absolute;
-        min-width: 100px;
-        bottom: 50px;
-        z-index: 1;
-        opacity: 1; 
-        
-        
-      }
-      
-      
-      .dropup-content a:hover {
-      background-color:  #218ffe;
-          
-      }
-      
-
-      .dropup-content a {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color:#218ffe;;
-        color: white;
-        padding: 7px 10px;
-        text-decoration: none;
-        display: block;
-        font-size: 12px;
-        font-weight: bold;
-        transform: skew(-25deg); 
-    -o-transform: skew(-25deg); 
-    -moz-transform: skew(-25deg); 
-    -webkit-transform: skew(-25deg);
-        
-      }
-      
-      #ANA1 , #ANA2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/ana1.png?v=1654194386098");
-        background-size: %;}
-      
-      #DVA1 , #DVA2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/dva.png");
-        background-size: %;}
-      
-      #MEI1 , #MEI2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/mei.png?v=1654384986756");
-        background-size: %;}
-      
-      #MERCY1 , #MERCY2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/mercy.png?v=1654385025667");
-        background-size: %;}
-      
-      #PHARAH1 , #PHARAH2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/pharah.png?v=1654385079029");
-        background-size: %;}
-      
-      #ANA1 , #ANA2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/ana1.png?v=1654194386098");
-        background-size: %;}
-      
-      #SOMBRA , #SOMBRA2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/sombra.png?v=1654385116597");
-        background-size: %;}
-      
-      #SYMMETRA , #SYMMETRA2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/symmetra.png?v=1654385349315");
-        background-size: %;}
-      
-      #TRACER1 , #TRACER2 {
-        background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/tracer.png?v=1654385424566");
-        background-size: %;}
-
-      .dropup-content a:hover {
-          
-      }
-
-      .dropup:hover .dropup-content {
-        display: block;
-      }
-
-      .dropup:hover .dropbtn {
-      }
-      
-      ---------
-      
-      .dropbtn2 {
-        background-color: #405275;
-        color: white;
-        padding: 16px;
-        font-size: 11px;
-        border: none;
-      }
-
-      .dropup2 {
-        position: relative;
-        display: inline-block;
-        opacity: 1; 
-        
-      }
-
-      .dropup-content2 {
-        display: none;
-        position: absolute;
-        min-width: 100px;
-        bottom: 50px;
-        z-index: 1;
-        opacity: 1; 
-        
-        
-      }
-      
-      
-      .dropup-content2 a:hover {
-      background-color:  #405275
-          
-      }
-      
-
-      .dropup-content2 a {
-        background-color:#405275;
-        color: white;
-        padding: 7px 10px;
-        text-decoration: none;
-        display: block;
-        font-size: 12px;
-        font-weight: bold;
-        transform: skew(-25deg); 
-    -o-transform: skew(-25deg); 
-    -moz-transform: skew(-25deg); 
-    -webkit-transform: skew(-25deg);
-        
-      }
-      
-       .dropup-content2 a:hover {
-          
-      }
-
-      .dropup:hover .dropup-content2 {
-        display: block;
-      }
-
-      .dropup:hover .dropbtn2 {
-      }
+ .f {
+     height: 100%;
+     width:100%;
+     margin:0;
+     padding:0;
+     background:url(https://acegif.com/wp-content/uploads/loading-58.gif);
+     background-position:50% 50%;
+     background-repeat:no-repeat;
+     z-index: 10;
+}
+ .text {
+     font-size: 12px;
+     color: white;
+     opacity:100;
+}
+ .buttons{
+     z-index: 10;
+     font-family: Arial, Helvetica, sans-serif;
+}
+ .buttons {
+     font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 10;
+}
+ .otro{
+     font-family: Arial, Helvetica, sans-serif;
+     transform: skew(-25deg);
+     -o-transform: skew(-25deg);
+     -moz-transform: skew(-25deg);
+     -webkit-transform: skew(-25deg);
+     font-size: 12px;
+     font-weight: bold;
+     margin: 5%;
+     border: none;
+     background: #10151b;
+     color: white;
+     width: 8em;
+     height: 3em;
+     opacity: 0.8;
+}
+ .personajes {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/personajes.png?v=1654385813581");
+     background-size: 110%;
+     background-position:left ;
+     transform: skew(-25deg);
+     -o-transform: skew(-25deg);
+     -moz-transform: skew(-25deg);
+     -webkit-transform: skew(-25deg);
+     font-size: 12px;
+     font-weight: bold;
+     letter-spacing: -1px;
+     border: none;
+     color: white;
+     width: 8em;
+     height: 6em;
+}
+ .dropbtn {
+     background-color: #3498DB;
+     color: white;
+     padding: 16px;
+     font-size: 11px;
+     border: none;
+}
+ .dropup {
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+     display: inline-block;
+     opacity: 1;
+}
+ .dropup-content {
+     font-family: 'Sans-serif';
+     display: none;
+     position: absolute;
+     min-width: 100px;
+     bottom: 50px;
+     z-index: 1;
+     opacity: 1;
+}
+ .dropup-content a:hover {
+     background-color: #218ffe;
+}
+ .dropup-content a {
+     font-family: Arial, Helvetica, sans-serif;
+     background-color:#218ffe;
+    ;
+     color: white;
+     padding: 7px 10px;
+     text-decoration: none;
+     display: block;
+     font-size: 12px;
+     font-weight: bold;
+     transform: skew(-25deg);
+     -o-transform: skew(-25deg);
+     -moz-transform: skew(-25deg);
+     -webkit-transform: skew(-25deg);
+}
+ #ANA1 , #ANA2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/ana1.png?v=1654194386098");
+}
+ #DVA1 , #DVA2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/dva.png");
+}
+ #MEI1 , #MEI2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/mei.png?v=1654384986756");
+}
+ #MERCY1 , #MERCY2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/mercy.png?v=1654385025667");
+}
+ #PHARAH1 , #PHARAH2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/pharah.png?v=1654385079029");
+}
+ #ANA1 , #ANA2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/ana1.png?v=1654194386098");
+}
+ #SOMBRA , #SOMBRA2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/sombra.png?v=1654385116597");
+}
+ #SYMMETRA , #SYMMETRA2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/symmetra.png?v=1654385349315");
+}
+ #TRACER1 , #TRACER2 {
+     background-image: url("https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/tracer.png?v=1654385424566");
+}
+ .dropup:hover .dropup-content {
+     display: block;
+}
+ .dropbtn2 {
+     background-color: #405275;
+     color: white;
+     padding: 16px;
+     font-size: 11px;
+     border: none;
+}
+ .dropup2 {
+     position: relative;
+     display: inline-block;
+     opacity: 1;
+}
+ .dropup-content2 {
+     display: none;
+     position: absolute;
+     min-width: 100px;
+     bottom: 50px;
+     z-index: 1;
+     opacity: 1;
+}
+ .dropup-content2 a:hover {
+     background-color: #405275 
+}
+ .dropup-content2 a {
+     background-color:#405275;
+     color: white;
+     padding: 7px 10px;
+     text-decoration: none;
+     display: block;
+     font-size: 12px;
+     font-weight: bold;
+     transform: skew(-25deg);
+     -o-transform: skew(-25deg);
+     -moz-transform: skew(-25deg);
+     -webkit-transform: skew(-25deg);
+}
+ .dropup:hover .dropup-content2 {
+     display: block;
+}.preloader
+{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
+background: #fff;
+z-index: 9999;
+text-align: center;
+}	.preloader-icon
+{
+position: relative;
+top: 45%;
+width: 100px;
+border-radius: 50%;
+animation: shake 1.5s infinite;
+}	@keyframes shake
+{
+0% { transform: translate(1px, -1px) rotate(0deg);}
+10% { transform: translate(1px, -3px) rotate(-1deg);}
+20% { transform: translate(1px, -5px) rotate(-3deg);}
+30% { transform: translate(1px, -7px) rotate(0deg);}
+40% { transform: translate(1px, -9px) rotate(1deg);}
+50% { transform: translate(1px, -11px) rotate(3deg);}
+60% { transform: translate(1px, -9px) rotate(0deg);}
+70% { transform: translate(1px, -7px) rotate(-1deg);}
+80% { transform: translate(1px, -5px) rotate(-3deg);}
+90% { transform: translate(1px, -3px) rotate(0deg);}
+100% { transform: translate(1px, -1px) rotate(-1deg);}
+}
