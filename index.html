@@ -1,0 +1,78 @@
+<html>
+
+ <!-- Soporte tecnico: darhok77@gmail.com, ozmatech.com/digitalmedia, https://www.facebook.com/profile.php?id=100081096936461     -->
+    
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="assets/scripts/mindar-image.prod.js"></script>
+    <script src="assets/scripts/aframe.min.js"></script>
+    <script src="assets/scripts/mindar-image-aframe.prod.js"></script>
+    <script src="assets/scripts/aframe-extras.min.js"></script>
+    <script src="assets/scripts/jquery.min.js"></script> <script src="assets/scripts/changemodels.js"></script>
+    <script src="assets/scripts/changesizes.js"></script>
+    <script src="assets/scripts/toonmesh.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    
+ <!--  BUTTONS  -->      
+      
+  <body style="margin : 0px; overflow: hidden;">
+    <div class="frente">
+      <div class="buttons">
+        <div class="dropup">
+          <button class="personajes ">PERSONAJES</button>&nbsp; &nbsp; <div class="dropup-content">
+            <a href="#" id="ANA1">ANA 1</a>
+            <a href="#" id="ANA2">ANA 2</a>
+            <a href="#" id="DVA1">DVA 1</a>
+            <a href="#" id="DVA2">DVA 2</a>
+            <a href="#" id="MEI1">MEI 1</a>
+            <a href="#" id="MEI2">MEI 2</a>
+            <a href="#" id="MERCY1">MERCY 1</a>
+            <a href="#" id="MERCY2">MERCY 2</a>
+            <a href="#" id="PHARAH1">PHARAH 1</a>
+            <a href="#" id="PHARAH2">PHARAH 2</a>
+            <a href="#" id="SOMBRA">SOMBRA</a>
+            <a href="#" id="SYMMETRA">SYMMETRA</a>
+            <a href="#" id="TRACER1">TRACER 1</a>
+            <a href="#" id="TRACER2">TRACER 2</a>
+          </div>
+        </div>
+        <div class="dropup">
+          <button class="otro">Tamaño</button>
+          <div class="dropup-content2">
+            <a href="#" class="real" id="real">Tamaño Real</a>
+            <a href="#" class="grande" id="grande">Grande</a>
+            <a href="#" class="mediana" id="mediana">Mediana</a>
+            <a href="#" class="pequeña" id="pequeña">Pequeña</a>
+            <a href="#" class="muñequita" id="muñequita">Muñequita</a>
+          </div>
+        </div>
+        <input class="otro" type="button" onclick="location.href='https://github.com';" value="Github" />
+      </div>
+    </div>
+      
+    <!--  IMAGE TRACKER  -->     
+      
+    <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene" mindar-image="imageTargetSrc: https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/target.mind?v=1654393022921;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+     
+    <!--  3D MODEL SELECTION  -->   
+        
+      <a-assets>
+        <img id="transpImage" crossorigin="anonymous" src="https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/loading.png">
+        <a-asset-item id="avatarModel" src="https://cdn.glitch.global/1b79bf2e-e75d-4efd-86ce-a1120afcc419/ST0EAVKGQLKILV8K1C88EH4H6%20(1).glb"></a-asset-item>
+      </a-assets>
+        
+    <!--  3D MODEL VIEWER  -->  
+        
+      <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+      <a-entity mindar-image-target="targetIndex: 0">
+        <a-entity camera look-controls position="0 0 0">
+          <a-entity id="loadingEl">
+            <a-image src="#transpImage" alpha-test></a-image>
+          </a-entity>
+          <a-entity id="puta" scale="1 1 1" unlit gltf-model="#avatarModel" material="shader: flat" gesture-handler="minScale: 0.25; maxScale: 10" loader></a-entity>
+        </a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
