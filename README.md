@@ -2,7 +2,7 @@
 
 Aplicación web porno para ver a las heroínas de overwatch (desnudas) en realidad aumentada, aplicación basada en la web.
 
-[Demostración en vivo](https://ozmatech.com/digitalmedia/demos/overwatch-arporn/)
+[Demostración en vivo](https://overwatch-ar-porn-webbased.glitch.me)
 
 Instrucciones:
 
